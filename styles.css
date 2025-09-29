@@ -74,11 +74,13 @@ img {
     height: 29px;
     background-color: var(--Yellow);
     text-align: center;
-    padding: 4px 12px;
     border-radius: 4px;
-    font-size: 0.875rem;
+    font-size: 0.875em;
     font-weight: 800;
     color: var(--Gray-950);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .text-content {
@@ -90,14 +92,14 @@ img {
 }
 
 .publish-date {
-    font-size: 0.875rem;
+    font-size: 0.875em;
     font-weight: 500;
     color: var(--Gray-950);
     height: 30px;
 }
 
 .title {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     color: var(--Gray-950);
     font-weight: 800;
     height: 36px;
@@ -114,7 +116,7 @@ img {
 }
 
 .description {
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: 500;
     color: var(--Gray-500);
 }
@@ -129,7 +131,28 @@ img {
 }
 
 .author-name {
-    font-size: 0.875rem;
+    font-size: 0.875em;
     color: var(--Gray-950);
     font-weight: 800;
+}
+
+@media (max-width: 600px) {
+    .box {
+        width: 327px;
+        height: 501px;
+    }
+
+    .illustration-image {
+        width: 279px;
+    }
+
+    .text-content {
+        width: 279px;
+        font-size: 14px;
+    }
+
+    .tag {
+        width: 73px;
+        height: 26px;
+    }
 }
